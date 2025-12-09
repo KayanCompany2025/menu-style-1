@@ -10,13 +10,15 @@
   <body>
  
      <div class="sidebar">
-     <i id="close" class="fa-solid fa-x"></i> 
+        <div>     
+        <i id="close" class="fa-solid fa-x"></i> 
         <h1 class="sidebar-title">MENU</h1>
         <a href="#starter">Starters</a>
         <a href="#main">Main Dishes</a>
         <a href="#dessert">Desserts</a>
         <a href="#drinks">Drinks</a>
         </div>
+      </div>
       
     <header>
      <i id="sidebar" class="fa-solid fa-list"></i> 
@@ -28,17 +30,23 @@
         <a href="#dessert">Desserts</a>
         <a href="#drinks">Drinks</a>
       </nav>
-
+ 
       
  
     </header>
 
     <div class="menu">
-      <div><h2><li class="tit" id="starter">starter</li></h2></div>
-      <div class="starter"> 
-        <div class="card">
-          <img src="img/Hummus with Beef Cubes.jpg" alt="img" />
-          <div class="contant">
+      <section class="starter" id="starter">
+        <div><h2><li class="tit" >starter</li></h2></div>
+        <div class="cards"> 
+          <div class="card"
+                 onclick="showPreview(this)"
+                 data-img="img/Hummus with Beef Cubes.jpg"
+                 data-name="Hummus with Beef Cubes"
+                 data-desc="  Creamy hummus topped with tender grilled beef cubes and olive oil."
+                 data-price="125 L.E.">
+            <img src="img/Hummus with Beef Cubes.jpg" alt="img" />
+            <div class="contant">
             <h3 class="item-title">Hummus with Beef Cubes</h3>
             <p>
               Creamy hummus topped with tender grilled beef cubes and olive oil.
@@ -46,7 +54,12 @@
             <span class="item-price" >125 L.E.  </span>
           </div>
         </div>
-        <div class="card">
+        <div class="card"
+                 onclick="showPreview(this)"
+                 data-img="img/Stuffed Vine Leaves.jpg"
+                 data-name="Stuffed Vine Leaves"
+                 data-desc="  Delicious vine leaves stuffed with rice, herbs, and lemon flavor"
+                 data-price="90 L.E.">
           <img src="img/Stuffed Vine Leaves.jpg" alt="" />
           <div class="contant">
             <h3  class="item-title">Stuffed Vine Leaves</h3>
@@ -56,7 +69,12 @@
             <span class="item-price">90 L.E.  </span>
           </div>
         </div>
-        <div class="card">
+        <div class="card"     
+                 onclick="showPreview(this)"
+                 data-img="img/Grilled Vegetable Skewers.jpg"
+                 data-name="Grilled Vegetable Skewers"
+                 data-desc="Colorful grilled vegetables served on skewers with smoky flavor"
+                 data-price="90 L.E.">
           <img src="img/Grilled Vegetable Skewers.jpeg" alt="" />
           <div class="contant">
             <h3  class="item-title">Grilled Vegetable Skewers</h3>
@@ -66,7 +84,13 @@
             <span class="item-price">140 L.E.   </span>
           </div>
         </div>
-        <div class="card">
+        <div class="card"
+                 data-img="img/Tabbouleh Salad.webp.jpg"
+                 data-name="Tabbouleh Salad"
+                 data-desc="Fresh parsley salad mixed with tomatoes, onions, and lemon
+              dressing"
+                 data-price="90 L.E."
+        >
           <img src="img/Tabbouleh Salad.webp" alt="" />
           <div class="contant">
             <h3  class="item-title">Tabbouleh Salad</h3>
@@ -78,11 +102,18 @@
           </div>
         </div>
       </div>
-       <div><h2><li class="tit" id="main">Main Dishes</li></h2></div>
-      <div class="Main-Dishes">
-        
-        
-        <div class="card">
+ 
+      </section>
+      <section class="Main-Dishes" id="main">
+        <div><h2><li class="tit" >Main Dishes</li></h2></div>
+      <div class="cards">
+        <div class="card"
+               onclick="showPreview(this)"
+               data-img="img/Mixed Grill Platter.webp"
+               data-name="Mixed Grill Platter"
+               data-desc="A variety of grilled meats including kofta, chicken, and lamb chops"
+               data-price="1250 L.E"
+        >
           <img src="img/Mixed Grill Platter.webp" alt="img" />
           <div class="contant">
             <h3  class="item-title">Mixed Grill Platter</h3>
@@ -90,7 +121,13 @@
             <span class="item-price">1250 L.E.  </span>
           </div>
         </div>
-        <div class="card">
+        <div class="card"
+               onclick="showPreview(this)"
+               data-img="img/Lamb Chops.jpeg"
+               data-name="Lamb Chops"
+               data-desc="Juicy marinated lamb chops grilled to perfection"
+               data-price="600 L.E."
+        >
           <img src="img/Lamb Chops.jpeg" alt="img" />
           <div class="contant">
             <h3  class="item-title">Lamb Chops</h3>
@@ -98,7 +135,13 @@
             <span class="item-price">600 L.E. </span>
           </div>
         </div>
-         <div class="card">
+         <div class="card"
+               onclick="showPreview(this)"
+               data-img="img/Chicken Shish Tawook.jpeg"
+               data-name="Chicken Shish Tawook"
+               data-desc="Marinated chicken cubes grilled on skewers with smoky flavor"
+               data-price="230 L.E."
+         >
           <img src="img/Chicken Shish Tawook.jpeg" alt="img" />
           <div class="contant">
             <h3  class="item-title">Chicken Shish Tawook</h3>
@@ -106,7 +149,13 @@
             <span class="item-price">230 L.E. </span>
           </div>
         </div>
-         <div class="card">
+         <div class="card"
+               onclick="showPreview(this)"
+               data-img="img/Kofta Kebab.jpg"
+               data-name="Kofta Kebab"
+               data-desc="Grilled kofta made from seasoned minced beef"
+               data-price="450 L.E. "
+         >
           <img src="img/Kofta Kebab.jpg" alt="img" />
           <div class="contant">
             <h3  class="item-title">Kofta Kebab</h3>
@@ -115,11 +164,17 @@
           </div>
         </div>
       </div>
-       <div><h2><li class="tit" id="dessert">Desserts</li></h2></div>
-      <div class="desserts">
-        
-        
-        <div class="card">
+      </section>
+      <section class="dessert"  id="dessert">
+       <div><h2><li class="tit">Desserts</li></h2></div>
+      <div class="cards">
+        <div class="card"
+               onclick="showPreview(this)"
+               data-img="img/Kunafa.jpg"
+               data-name="Kunafa"
+               data-desc="Traditional Middle Eastern kunafa with soft cheese and sweet syrup"
+               data-price="250 L.E."  
+        >
           <img src="img/Kunafa.jpg" alt="img" />
           <div class="contant">
             <h3  class="item-title">Kunafa</h3>
@@ -127,7 +182,13 @@
             <span class="item-price">250 L.E.</span>
           </div>
         </div>
-        <div class="card">
+        <div class="card"
+                     onclick="showPreview(this)"
+               data-img="img/Basbousa.avif"
+               data-name="Basbousa"
+               data-desc="Sweet semolina cake baked with coconut and honey."
+               data-price="160 L.E. "
+        >
           <img src="img/Basbousa.avif" alt="img" />
           <div class="contant">
             <h3  class="item-title">Basbousa</h3>
@@ -135,7 +196,12 @@
             <span class="item-price">160 L.E. </span>
           </div>
         </div>
-         <div class="card">
+         <div class="card"
+               onclick="showPreview(this)"
+               data-img="img/Baklava.jpg"
+               data-name="Baklava"
+               data-desc="Layers of crispy pastry filled with nuts and sweet syrup."
+               data-price="140 L.E.">
           <img src="img/Baklava.jpg" alt="img" />
           <div class="contant">
             <h3  class="item-title">Baklava</h3>
@@ -144,7 +210,13 @@
             <span class="item-price">140 L.E. </span>
           </div>
         </div>
-         <div class="card">
+         <div class="card"
+                        onclick="showPreview(this)"
+               data-img="img/Rice Pudding.jpg"
+               data-name="Rice Pudding"
+               data-desc="Creamy rice pudding topped with cinnamon"
+               data-price="100 L.E.">
+         
           <img src="img/Rice Pudding.jpg" alt="img" />
           <div class="contant">
             <h3  class="item-title">Rice Pudding</h3>
@@ -153,12 +225,18 @@
           </div>
         </div>
       </div>
-    
-      <div><h2><li class="tit" id="drinks">Drinks</li></h2></div>
-      <div class="drinks">
-        
-        
-        <div class="card">
+    </section>
+      
+    <section class="drinks" id="drinks">
+      <div><h2><li class="tit" >Drinks</li></h2></div>
+      <div class="cards">
+          <div class="card"
+                   onclick="showPreview(this)"
+               data-img="img/Fresh Lemon Mint.webp"
+               data-name="Fresh Lemon Mint"
+               data-desc=">A refreshing blend of fresh lemon juice and cool mint leaves"
+               data-price="40 L.E.">
+          
           <img src="img/Fresh Lemon Mint.webp" alt="img" />
           <div class="contant">
             <h3  class="item-title">Fresh Lemon Mint</h3>
@@ -166,7 +244,13 @@
             <span class="item-price">40 L.E.</span>
           </div>
         </div>
-        <div class="card">
+        <div class="card"
+              onclick="showPreview(this)"
+               data-img="img/Karkadeh.webp"
+               data-name="Karkadeh"
+               data-desc="A naturally sweet and tangy iced hibiscus drink with a deep red color and a smooth, fruity finish"
+               data-price="30 L.E. "
+        >
           <img src="img/Karkadeh.webp" alt="img" />
           <div class="contant">
             <h3  class="item-title">Karkadeh</h3>
@@ -174,7 +258,13 @@
             <span class="item-price">30 L.E. </span>
           </div>
         </div>
-         <div class="card">
+         <div class="card"
+                       onclick="showPreview(this)"
+               data-img="img/Mango Smoothie.jpg"
+               data-name="Mango Smoothie"
+               data-desc=" A thick and creamy smoothie made with ripe mangoes, offering a rich tropical flavor and natural sweetness"
+               data-price="55 L.E. "
+         >
           <img src="img/Mango Smoothie.jpg" alt="img" />
           <div class="contant">
             <h3  class="item-title">Mango Smoothie</h3>
@@ -183,7 +273,13 @@
             <span class="item-price">55 L.E. </span>
           </div>
         </div>
-         <div class="card">
+         <div class="card"
+                         onclick="showPreview(this)"
+               data-img="img/Strawberry Milkshake.jpg"
+               data-name="Strawberry Milkshake"
+               data-desc="A classic milkshake blended with fresh strawberries and cold milk, creating a sweet, creamy, and fruity drink"
+               data-price="50 L.E. "
+         >
           <img src="img/Strawberry Milkshake.jpg" alt="img" />
           <div class="contant">
             <h3  class="item-title">Strawberry Milkshake</h3>
@@ -192,9 +288,11 @@
           </div>
         </div>
       </div>
+    </section>
+      
       <footer>
         <h1 class="title">MENU</h1>
-        <P>See us in</P>
+       
         <div class="sc-icons">
           <a href="#"><i class="fa-brands fa-facebook"></i></a>
           <a href="#"><i class="fa-brands fa-tiktok"></i></a>
@@ -203,6 +301,19 @@
           </i>
         </div>
       </footer>
+      <!-- Preview Popup -->
+<div id="previewPopup" class="preview hidden">
+  <div class="preview-content">
+    <span id="closePreview" class="close">&times;</span>
+    <img id="previewImg" src="" alt="">
+    <h2 id="previewName"></h2>
+    <p id="previewDesc"></p>
+    <h3 id="previewPrice"></h3>
+    <div class="add"><button class="btn-add">+</button></div>
+    
+  </div>
+</div>
+
     <script src="script.js"></script>
   </body>
 </html>
