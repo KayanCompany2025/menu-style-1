@@ -1,204 +1,277 @@
 *{
-    padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
-  }
-.info{
-  color:rgb(255, 255, 255);
-  font-size: 21px;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-select{
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: rgb(66, 95, 69);
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    border: none;
+
+html{
+    scroll-behavior: smooth;
 }
-select:hover{
-    background-color: rgb(205, 248, 167);
-    color: rgb(0, 0, 0);
-    transition: .5s;
+
+  
+
+body{ 
+    background-color: #e3e3de;
 }
-.cards{
+header{
     width: 100%;
-}
-.card:hover{
-    transform: scale(1.1);
-    transition: .5s;
-}
-.contact{
+    margin: 0;
+    position: fixed;
+    padding: 15px;
+    top: 0;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #272725;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 5;
 }
  
-
-.card{
-  
-    width: 21.25em;
-    box-shadow: 0 5px 25px rgba(184, 202, 212, 0.5);
-    border-radius: 10px;
-    padding: 25px;
-    margin: 15px;
-    transition: 0.7s
-    border none;
-    
-    border: 2px solid rgba(255, 255, 255, 0.858);
-    border-radius: 16px;
-    font-size: 16px;
-     
-     
-}
-.title {
-    text-align: center;
-    justify-content: center;
-    background-color: rgb(66, 95, 69);
-    color:rgb(0, 0, 0);
-    font-size:2.2em ;
-    font-weight:800 ;
-}
-.see-photo{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 0 15px;
-    border-radius: 15px;
-    font-size: 20px;
-    background-color: rgb(66, 95, 69);
-}
-label.logo img{
-    width: 200px;
-    padding: 7px 100px;
-    line-height: 80px;
-  }
-body{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background:url(IMG-20250116-WA0020.jpg) no-repeat;
-    background-size: cover;
+.starter ,
+.Main-Dishes ,
+.drinks,
+.dessert{
+    background-color: #272725;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 35px;
     
 }
-nav{
-    height: 80px;
-    width: 100%;
-    background: #3d342b;
-  }
-nav ul{
-    float: right;
-    margin-right: 40px;
-  }
-nav li{
-    display: inline-block;
-    margin: 0 5px;
-    line-height: 80px;
-  }
-nav a {
-    color:#EFE8D9;
-    font-size: 18px;
-    border: 1px solid transparent;
-    padding: 7px 10px;
-    border-radius: 3px;  
-  }
-a.active,a:hover{
-    border: 1px solid ;
-    transition: .5s;
-  }
-nav #icon{
-    color:rgb(255, 145, 0);
-    font-size: 30px;
-    line-height: 80px;
-    float:right;
-    margin-right: 40px;
-    cursor: pointer;
+.title{
+    margin-left: 15px;
+    display: flex;
+    color:#e9980e ;
+}
+.links-sections a{
+    text-decoration:none;
+    padding: 8px;
+    padding-inline: 15px;
+    margin: 8px;
+    color:#272725;
+    background-color: whitesmoke;
+    border-radius:25px ;
+    transition: 0.5s;
+}
+.links-sections a:hover{
+    color: whitesmoke;
+    background-color:#272725;
+    padding-inline: 30px;
+}
+#sidebar{
+    color:#e9980e;
+    font-size: 25px;
+    margin: 20px;
     display: none;
-  
-  }
-.container {
-    display: inline-block;
+}
+.menu{
+    position: relative;
+    top: 100px;
+} 
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.links-sections-phones{
+  margin-top: 75px;
+  display: none;
+  overflow-x: auto;          /* horizontal scroll */
+  white-space: nowrap;
+  padding: 10px;
+  scroll-behavior: smooth;
+  /* hide scrollbar */
+  scrollbar-width: none;  
+    
+}
+.links-sections-phones a{
+    text-decoration:none;
+    padding: 8px;
+    padding-inline: 15px;
+    margin: 8px;
+    color: black;
+      background: #eee;
+    border-radius:25px ;
+    transition: 0.5s; 
+}
+.card{
+  margin: 15px;
+  width: 300px;
+  height: 600px;
+  background-color:#e3e3de;
+ 
+  backdrop-filter: blur(10px);
+  color: #f5deb3;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+} 
+.card:hover{
+  width: 305px;
+  font-size: 15px;
+}
+
+
+.card img{
+   width: 100%;
+
+   border-radius:10px ;
+   transition: 0.5s;
+}
+.card img:hover{
+    transform: scale(1.05);
+}
+.card .contant h3{
+    color:#e9980e;
+    padding: 10px;
+}
+.card .contant p{
+    color: #272725;
+    padding: 10px;
+    
+}
+.card   span{
+    font-size: 1.1em;
+    font-weight: 500;
+    display: flex;
+    justify-content: end;
+    color: #272725;
+    margin: 5px;
+    align-items: center;
+}
+
+.card .add-cart{ 
+    text-decoration: none;
+    border: none;
     cursor: pointer;
-  }
+    margin-left:5px ;
+    font-size: 25px;
+    padding:5px;
+    padding-inline: 12px;
+    border-radius:180px;
+    color: whitesmoke;
+    background-color: #e9980e;
+}
+.tit{
+    color: #e9980e;
+    margin-left: 40px;
   
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color:rgba(255, 255, 255, 0.858);
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  /* Rotate first bar */
-.change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  
-  /* Fade out the second bar */
-.change .bar2 {opacity: 0;}
-  
-  /* Rotate last bar */
-.change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
-@media(max-width:1048){
-    nav ul{
-      margin-right: 20px;
+} 
+footer{
+    display: flex;
+    padding: 25px;
+    height: 50px;
+    background-color: #272725;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+}
+footer p{
+    color: #f5f5f5;
+    padding: 5px;
+    font-size: 25px;
+}
+footer i{
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+@media(max-width:600px){
+    .card{
+        height: auto;
     }
-    nav a{
-      font-size: 17px;
+    .links-sections{
+        display: none;
     }
-  }
-@media(max-width:909px){
-    label.logo img{
-        width: 200px;
-        padding: 0 50px;
+    header{
+        justify-content: left;
+        text-align: center;
     }
-    nav #icon{
-      display: block;
-       
+    .links-sections-phones{
+    display: flex;
     }
-    nav ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background:rg;
-      top: 80px;
-      left:-100%;
-      text-align: center;
-      transform: all .5s;
-      background-color:#3d342b ;
-  
+    .menu{
+     top: 0;
+     }
+}     
+    footer{
+        flex-direction: column;
+        height: 60px;
     }
-    nav li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav a {
-      font-size: 2.2em;
-    }
-    a.active,a:hover{
-      border: none;
-      color: rgb(255, 255, 255);
-      border-radius: 15px;
-      background-color: rgb(66, 95, 69);
-    }
-    nav ul.show{
-      left: 0;
-    }
-    body{
-      background:  url(1.jpg) ;
-       
-    }
-    select{
-      width: 200px;
-      height: 50px;
-    }
-    .info{
-      font-size: 22.5px;
-    }
-    select{
-      width: 200px;
-      height: 50px;
-      font-size: 20px;}
-    }
+    
+
+
+
+
+
+
+
+.preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  z-index: 999;
+  align-items: center;
+}
+.add{
+   display: flex;
+   justify-content: end;
+}
+.btn-add{
+    background-color: #e9980e;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    padding-inline:20px ;
+}
+.preview-content {
+  background: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 15px;
+  animation: show 0.3s ease;
+}
+.preview-content p{
+    font-size: 20px;
+    color: #272725;
+}
+.preview h3{
+    font-size: 25px;
+    text-align: right;
+    
+}
+.preview-content h2{
+    font-weight: 700;
+    color: #e9980e;
+    font-size: 30px;
+}
+
+.preview img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.close {
+  float: right;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+ 
+@keyframes show {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
