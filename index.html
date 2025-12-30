@@ -7,21 +7,9 @@
     <title>menu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   </head>
-  <body>
- 
-     <div class="sidebar">
-        <div>     
-        <i id="close" class="fa-solid fa-x"></i> 
-        <h1 class="sidebar-title">MENU</h1>
-        <a href="#starter">Starters</a>
-        <a href="#main">Main Dishes</a>
-        <a href="#dessert">Desserts</a>
-        <a href="#drinks">Drinks</a>
-        </div>
-      </div>
-      
+  <body> 
     <header>
-     <i id="sidebar" class="fa-solid fa-list"></i> 
+      
       <h1 class="title">MENU</h1> 
 
       <nav class="links-sections">
@@ -30,10 +18,13 @@
         <a href="#dessert">Desserts</a>
         <a href="#drinks">Drinks</a>
       </nav>
- 
-      
- 
     </header>
+    <div class="links-sections-phones">
+        <a href="#starter">Starters</a>
+        <a href="#main">Main Dishes</a>
+        <a href="#dessert">Desserts</a>
+        <a href="#drinks">Drinks</a>
+    </div>
 
     <div class="menu">
       <section class="starter" id="starter">
@@ -71,7 +62,7 @@
         </div>
         <div class="card"     
                  onclick="showPreview(this)"
-                 data-img="img/Grilled Vegetable Skewers.jpg"
+                 data-img="img/Grilled Vegetable Skewers.jpeg"
                  data-name="Grilled Vegetable Skewers"
                  data-desc="Colorful grilled vegetables served on skewers with smoky flavor"
                  data-price="90 L.E.">
@@ -85,7 +76,8 @@
           </div>
         </div>
         <div class="card"
-                 data-img="img/Tabbouleh Salad.webp.jpg"
+                 onclick="showPreview(this)"
+                 data-img="img/Tabbouleh Salad.webp"
                  data-name="Tabbouleh Salad"
                  data-desc="Fresh parsley salad mixed with tomatoes, onions, and lemon
               dressing"
@@ -309,8 +301,6 @@
     <h2 id="previewName"></h2>
     <p id="previewDesc"></p>
     <h3 id="previewPrice"></h3>
-    <div class="add"><button class="btn-add">+</button></div>
-    
   </div>
 </div>
 

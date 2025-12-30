@@ -1,10 +1,4 @@
-const sidebarIcon = document.getElementById("sidebar");
-const sidebar = document.querySelector(".sidebar");
-const sidebarClose = document.getElementById("close");
-sidebarIcon.addEventListener("click",() => sidebar.classList.add("active") );
-
-sidebarClose.addEventListener("click" , () => sidebar.classList.remove("active"));
-
+ 
 
 
 
@@ -23,7 +17,7 @@ function showPreview(item) {
   previewImg.src = item.dataset.img;
   previewName.textContent = item.dataset.name;
   previewDesc.textContent = item.dataset.desc;
-  previewPrice.textContent = item.dataset.price + " EGP";
+  previewPrice.textContent = item.dataset.price ;
 
   preview.classList.remove("hidden");
 
@@ -38,3 +32,7 @@ closePreview.onclick = () => {
   // ❗ هنا نرجّع الحركة عادي
   document.body.style.overflow = "auto";
 };
+
+
+
+ 
